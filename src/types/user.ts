@@ -1,6 +1,6 @@
 
 
- export interface UserState {
+export interface UserState {
     users: any[];
     loading: boolean;
     error: null | string;
