@@ -12,6 +12,12 @@ const UserList:React.FC = () => {
     useEffect(()=>{
         fetchUsers()
     },[])
+    if (loading){
+      return <h1>Wait please</h1>
+    }
+    if(error){
+      return <h1>{error}</h1>
+    }
   return (
     <div>{
         users.map(user=>
